@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6726abb5-ba6d-4523-be35-c62566486762" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.3.9" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dGlYhixxKd1mJzlajbb3pFMomJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ProducerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ProducerTest" />
+      <module name="KafkaProducer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProducerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6726abb5-ba6d-4523-be35-c62566486762" name="Default Changelist" comment="" />
+      <created>1592059360682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592059360682</updated>
+      <workItem from="1592059365225" duration="1463000" />
+      <workItem from="1592106580718" duration="1400000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="474" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592108082726">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="474" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.860@0.0.1440.860" timestamp="1592108082726" />
+    <state width="1396" height="219" key="GridCell.Tab.0.bottom" timestamp="1592108831733">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1396" height="219" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1592108831733" />
+    <state width="1396" height="219" key="GridCell.Tab.0.center" timestamp="1592108831733">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1396" height="219" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1592108831733" />
+    <state width="1396" height="219" key="GridCell.Tab.0.left" timestamp="1592108831733">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1396" height="219" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1592108831733" />
+    <state width="1396" height="219" key="GridCell.Tab.0.right" timestamp="1592108831733">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1396" height="219" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1592108831733" />
+    <state x="221" y="61" key="SettingsEditor" timestamp="1592059452819">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="221" y="61" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1592059452819" />
+    <state x="400" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1592106602733">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="400" y="252" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1592106602733" />
+  </component>
+</project>
