@@ -4,6 +4,7 @@ import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
+import java.util.Date;
 import java.util.Properties;
 
 /**
@@ -28,7 +29,7 @@ public class ProducerTest
         Properties props = new Properties();
 
         // Assign localhost id 192.168.1.105
-        props.put("bootstrap.servers","192.168.1.105:9092");
+        props.put("bootstrap.servers","127.0.0.1:9092");
 
         props.put("acks","all");
 
@@ -45,7 +46,10 @@ public class ProducerTest
 
         Producer<String, String> producer = new KafkaProducer<String, String>(props);
         for (int i = 0; i < 10; i++) {
-            producer.send(new ProducerRecord<String, String>(topicName, Integer.toString(i), Integer.toString(i)));
+            producer.send(new ProducerRecord<String, String>(topicName,
+                    Integer.toString(i), // key
+                    Integer.toString(i) + "[" + new Date()  + "]" // value
+            ));
         }
         System.out.println("message send successfully");
         producer.close();
