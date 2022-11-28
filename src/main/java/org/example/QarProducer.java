@@ -15,7 +15,7 @@ import java.util.Properties;
  */
 public class QarProducer
 {
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
         System.out.println( "*** QarProducer Test ***" );
 
@@ -29,12 +29,12 @@ public class QarProducer
         Properties props = new Properties();
 
         // Assign localhost id 192.168.1.105
-        props.put("bootstrap.servers","127.0.0.1:9092");
+        props.put("bootstrap.servers", "192.168.43.227:9092");
 
         props.put("acks","all");
 
         // If the request fails, the producer can automatically retry,
-        props.put("retries", 0);
+        props.put("retries", 10);
 
         // Specify buffer size in config
         props.put("batch.size", 16384);
@@ -44,14 +44,19 @@ public class QarProducer
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
+        // changeStatus StopMessage(planeNo=B1870, organization=HO, firstTime=1660693394000, lastTime=1660701438000,
+        // fileName=/mnt/hgfs/centos_7_share2/B-1870_20220817015623.wgl/raw.dat, fileSize=16490496,
+        // processStart=1669622880824, processEnd=1669622913080, totalCount=8041, status=SUCC,
+        // qarId=1660701383000, categoryId=188, errorInfo=null) / true / 1001 / http://127.0.0.1:8080/data/updateQarDecode / true
         QarDecodeMsg msg = new QarDecodeMsg();
-        msg.setCount(1000);
-        msg.setFileSize(2000);
-        msg.setPlaneNumber("B1645");
-        msg.setStartTime(1660712526000L);
-        msg.setEndTime(1660712535000L);
-        msg.setQarId(1660724488000L);
-        msg.setQarFileName("/home/isoft/qar_file/B-1645_20220817082128.wgl/raw.dat");
+        msg.setCount(8041);
+        msg.setFileSize(16490496);
+        msg.setPlaneNumber("B1870");
+        msg.setStartTime(1660693394000L);
+        msg.setEndTime(1660701438000L);
+        msg.setQarId(1660701383000L);
+        msg.setQarFileName("/home/isoft/qar_file/B-1870_20220817015623.wgl/raw.dat");
+        msg.setCategoryId(188);
 
         String json = JSONObject.toJSONString(msg);
 

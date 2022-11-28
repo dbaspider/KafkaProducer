@@ -21,4 +21,6 @@ public class QarDecodeMsg {
 	private long fileSize; // qar 文件大小，字节
 
 	private long count; // 本次译码成果的记录条数
+
+	private long categoryId; // 本次译码使用的构型
 }
