@@ -48,14 +48,26 @@ public class QarProducer
         // fileName=/mnt/hgfs/centos_7_share2/B-1870_20220817015623.wgl/raw.dat, fileSize=16490496,
         // processStart=1669622880824, processEnd=1669622913080, totalCount=8041, status=SUCC,
         // qarId=1660701383000, categoryId=188, errorInfo=null) / true / 1001 / http://127.0.0.1:8080/data/updateQarDecode / true
+//        QarDecodeMsg msg = new QarDecodeMsg();
+//        msg.setCount(8041);
+//        msg.setFileSize(16490496);
+//        msg.setPlaneNumber("B1870");
+//        msg.setStartTime(1660693394000L);
+//        msg.setEndTime(1660701438000L);
+//        msg.setQarId(1660701383000L);
+//        msg.setQarFileName("/home/isoft/qar_file/B-1870_20220817015623.wgl/raw.dat");
+//        msg.setCategoryId(188);
+
+        // {"categoryId":188,"count":7944,"endTime":1670223653000,"fileSize":16269312,"planeNumber":"B8236",
+        // "qarFileName":"D:\\big_data\\ho_data\\20221120-20221205\\B8236\\B-8236_20221205070334.wgl\\raw.dat","qarId":1670223814000,"startTime":1670215708000}
         QarDecodeMsg msg = new QarDecodeMsg();
-        msg.setCount(8041);
-        msg.setFileSize(16490496);
-        msg.setPlaneNumber("B1870");
-        msg.setStartTime(1660693394000L);
-        msg.setEndTime(1660701438000L);
-        msg.setQarId(1660701383000L);
-        msg.setQarFileName("/home/isoft/qar_file/B-1870_20220817015623.wgl/raw.dat");
+        msg.setCount(7944);
+        msg.setFileSize(16269312);
+        msg.setPlaneNumber("B8236");
+        msg.setStartTime(1670215708000L);
+        msg.setEndTime(1670223653000L);
+        msg.setQarId(1670215708000L);
+        msg.setQarFileName("D:\\big_data\\ho_data\\20221120-20221205\\B8236\\B-8236_20221205070334.wgl\\raw.dat");
         msg.setCategoryId(188);
 
         String json = JSONObject.toJSONString(msg);
