@@ -61,15 +61,17 @@ public class QarProducer
         // {"categoryId":188,"count":7944,"endTime":1670223653000,"fileSize":16269312,"planeNumber":"B8236",
         // "qarFileName":"D:\\big_data\\ho_data\\20221120-20221205\\B8236\\B-8236_20221205070334.wgl\\raw.dat","qarId":1670223814000,"startTime":1670215708000}
         QarDecodeMsg msg = new QarDecodeMsg();
-        msg.setCount(7944);
-        msg.setFileSize(16269312);
-        msg.setPlaneNumber("B8236");
-        msg.setStartTime(1670215708000L);
-        msg.setEndTime(1670223653000L);
-        msg.setQarId(1670215708000L);
-        msg.setQarFileName("D:\\big_data\\ho_data\\20221120-20221205\\B8236\\B-8236_20221205070334.wgl\\raw.dat");
-        msg.setCategoryId(188);
+        msg.setCount(8465);
+        msg.setFileSize(17358848);
+        msg.setPlaneNumber("B324C");
+        msg.setStartTime(1669431103000L);
+        msg.setEndTime(1669439572000L);
+        msg.setQarId(1669431103000L);
+        msg.setQarFileName("D:\\big_data\\ho_data\\20221120-20221205\\B324C\\B-324C_20221126051826.wgl\\raw.dat");
+        msg.setCategoryId(185);
 
+        // {"categoryId":185,"count":8465,"endTime":1669439572000,"fileSize":17358848,"planeNumber":"B324C",
+        // "qarFileName":"D:\\big_data\\ho_data\\20221120-20221205\\B324C\\B-324C_20221126051826.wgl\\raw.dat","qarId":1669439906000,"startTime":1669431103000}
         String json = JSONObject.toJSONString(msg);
 
         Producer<String, String> producer = new KafkaProducer<String, String>(props);
