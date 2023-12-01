@@ -13,6 +13,8 @@ import java.util.Properties;
  */
 public class ProducerTest
 {
+    private static volatile int g_sn = 0;
+
     public static void main( String[] args )
     {
         System.out.println( "*** Producer Test ***" );
@@ -46,8 +48,9 @@ public class ProducerTest
 
         Producer<String, String> producer = new KafkaProducer<String, String>(props);
         for (int i = 0; i < 10; i++) {
+            g_sn++;
             producer.send(new ProducerRecord<String, String>(topicName,
-                    Integer.toString(i), // key
+                    Integer.toString(g_sn), // key
                     Integer.toString(i) + "[" + new Date()  + "]" // value
             ));
         }
